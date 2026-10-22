@@ -19,7 +19,8 @@
         "ja": "空き容量を確保：重複写真、大きな動画、スクリーンショットなど。",
         "ko": "공간 확보: 중복 사진, 큰 동영상, 스크린샷 등.",
         "nl": "Maak ruimte vrij: dubbele foto's, grote video's, screenshots en meer.",
-        "pt": "Libere espaço: fotos duplicadas, vídeos grandes, capturas e mais."
+        "pt": "Libere espaço: fotos duplicadas, vídeos grandes, capturas e mais.",
+        "ar": "وفّر المساحة: الصور المكرّرة ومقاطع الفيديو الكبيرة ولقطات الشاشة والمزيد."
       }
     },
     {
@@ -40,7 +41,8 @@
         "ja": "宝石をそろえて、クリスタルの花を咲かせよう。",
         "ko": "보석을 맞춰 크리스털 꽃을 피워 보세요.",
         "nl": "Combineer edelstenen die opbloeien tot kristallen bloemen.",
-        "pt": "Combine gemas que desabrocham em flores de cristal."
+        "pt": "Combine gemas que desabrocham em flores de cristal.",
+        "ar": "طابِق الأحجار الكريمة لتتفتّح أزهارًا من الكريستال."
       }
     },
     {
@@ -61,7 +63,8 @@
         "ja": "毎日の信仰のおともに。",
         "ko": "매일의 신앙 동반자.",
         "nl": "Je dagelijkse religieuze metgezel.",
-        "pt": "Seu guia religioso diário."
+        "pt": "Seu guia religioso diário.",
+        "ar": "رفيقك الديني اليومي."
       }
     }
   ]

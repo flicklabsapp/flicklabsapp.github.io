@@ -42,7 +42,7 @@ footer{color:var(--muted);font-size:13px;margin-top:34px;text-align:center}
     <select id="lang" aria-label="Language"></select>
   </div>
   <h1 id="h1">Simple, useful apps and games for Android.</h1>
-  <p class="lead" id="lead">Small tools that save you time and space, and games you can play in a few minutes. Available in 10 languages.</p>
+  <p class="lead" id="lead">Small tools that save you time and space, and games you can play in a few minutes. Available in 11 languages.</p>
 
   <h2 id="hApps">Our apps</h2>
   <div class="grid" id="apps"></div>
@@ -54,18 +54,19 @@ footer{color:var(--muted);font-size:13px;margin-top:34px;text-align:center}
 </div>
 <script>
 const T={
-en:{n:'English',h1:'Simple, useful apps and games for Android.',lead:'Small tools that save you time and space, and games you can play in a few minutes. Available in 10 languages.',apps:'Our apps',contact:'Contact',c:'Questions, feedback or support requests',soon:'Coming soon',priv:'Privacy policy'},
-de:{n:'Deutsch',h1:'Einfache, nützliche Apps und Spiele für Android.',lead:'Kleine Werkzeuge, die dir Zeit und Speicher sparen, und Spiele für ein paar Minuten zwischendurch. In 10 Sprachen verfügbar.',apps:'Unsere Apps',contact:'Kontakt',c:'Fragen, Feedback oder Support-Anfragen',soon:'Demnächst',priv:'Datenschutzerklärung'},
-tr:{n:'Türkçe',h1:'Android için sade ve kullanışlı uygulamalar ve oyunlar.',lead:'Sana zaman ve yer kazandıran küçük araçlar, birkaç dakikada oynanan oyunlar. 10 dilde.',apps:'Uygulamalarımız',contact:'İletişim',c:'Soru, öneri ve destek talepleri',soon:'Yakında',priv:'Gizlilik politikası'},
-es:{n:'Español',h1:'Apps y juegos sencillos y útiles para Android.',lead:'Pequeñas herramientas que te ahorran tiempo y espacio, y juegos para unos minutos. Disponibles en 10 idiomas.',apps:'Nuestras apps',contact:'Contacto',c:'Preguntas, comentarios o soporte',soon:'Próximamente',priv:'Política de privacidad'},
-fr:{n:'Français',h1:'Des applis et des jeux simples et utiles pour Android.',lead:"De petits outils qui vous font gagner du temps et de l'espace, et des jeux pour quelques minutes. Disponibles en 10 langues.",apps:'Nos applis',contact:'Contact',c:"Questions, avis ou demandes d'assistance",soon:'Bientôt',priv:'Politique de confidentialité'},
-it:{n:'Italiano',h1:'App e giochi semplici e utili per Android.',lead:'Piccoli strumenti che ti fanno risparmiare tempo e spazio, e giochi da pochi minuti. Disponibili in 10 lingue.',apps:'Le nostre app',contact:'Contatti',c:'Domande, feedback o richieste di assistenza',soon:'In arrivo',priv:'Informativa sulla privacy'},
-ja:{n:'日本語',h1:'Android向けの、シンプルで便利なアプリとゲーム。',lead:'時間と容量を節約できる小さなツールと、数分で遊べるゲーム。10言語に対応。',apps:'アプリ一覧',contact:'お問い合わせ',c:'ご質問・ご意見・サポート',soon:'近日公開',priv:'プライバシーポリシー'},
-ko:{n:'한국어',h1:'Android를 위한 간단하고 유용한 앱과 게임.',lead:'시간과 공간을 아껴 주는 작은 도구, 몇 분이면 즐길 수 있는 게임. 10개 언어 지원.',apps:'앱 목록',contact:'문의',c:'질문, 의견 또는 지원 요청',soon:'출시 예정',priv:'개인정보처리방침'},
-nl:{n:'Nederlands',h1:'Eenvoudige, handige apps en games voor Android.',lead:'Kleine tools die je tijd en ruimte besparen, en games voor een paar minuten. Beschikbaar in 10 talen.',apps:'Onze apps',contact:'Contact',c:'Vragen, feedback of ondersteuning',soon:'Binnenkort',priv:'Privacybeleid'},
-pt:{n:'Português',h1:'Apps e jogos simples e úteis para Android.',lead:'Pequenas ferramentas que economizam seu tempo e espaço, e jogos para poucos minutos. Disponíveis em 10 idiomas.',apps:'Nossos apps',contact:'Contato',c:'Dúvidas, sugestões ou suporte',soon:'Em breve',priv:'Política de privacidade'}
+en:{n:'English',h1:'Simple, useful apps and games for Android.',lead:'Small tools that save you time and space, and games you can play in a few minutes. Available in 11 languages.',apps:'Our apps',contact:'Contact',c:'Questions, feedback or support requests',soon:'Coming soon',priv:'Privacy policy'},
+de:{n:'Deutsch',h1:'Einfache, nützliche Apps und Spiele für Android.',lead:'Kleine Werkzeuge, die dir Zeit und Speicher sparen, und Spiele für ein paar Minuten zwischendurch. In 11 Sprachen verfügbar.',apps:'Unsere Apps',contact:'Kontakt',c:'Fragen, Feedback oder Support-Anfragen',soon:'Demnächst',priv:'Datenschutzerklärung'},
+tr:{n:'Türkçe',h1:'Android için sade ve kullanışlı uygulamalar ve oyunlar.',lead:'Sana zaman ve yer kazandıran küçük araçlar, birkaç dakikada oynanan oyunlar. 11 dilde.',apps:'Uygulamalarımız',contact:'İletişim',c:'Soru, öneri ve destek talepleri',soon:'Yakında',priv:'Gizlilik politikası'},
+es:{n:'Español',h1:'Apps y juegos sencillos y útiles para Android.',lead:'Pequeñas herramientas que te ahorran tiempo y espacio, y juegos para unos minutos. Disponibles en 11 idiomas.',apps:'Nuestras apps',contact:'Contacto',c:'Preguntas, comentarios o soporte',soon:'Próximamente',priv:'Política de privacidad'},
+fr:{n:'Français',h1:'Des applis et des jeux simples et utiles pour Android.',lead:"De petits outils qui vous font gagner du temps et de l'espace, et des jeux pour quelques minutes. Disponibles en 11 langues.",apps:'Nos applis',contact:'Contact',c:"Questions, avis ou demandes d'assistance",soon:'Bientôt',priv:'Politique de confidentialité'},
+it:{n:'Italiano',h1:'App e giochi semplici e utili per Android.',lead:'Piccoli strumenti che ti fanno risparmiare tempo e spazio, e giochi da pochi minuti. Disponibili in 11 lingue.',apps:'Le nostre app',contact:'Contatti',c:'Domande, feedback o richieste di assistenza',soon:'In arrivo',priv:'Informativa sulla privacy'},
+ja:{n:'日本語',h1:'Android向けの、シンプルで便利なアプリとゲーム。',lead:'時間と容量を節約できる小さなツールと、数分で遊べるゲーム。11言語に対応。',apps:'アプリ一覧',contact:'お問い合わせ',c:'ご質問・ご意見・サポート',soon:'近日公開',priv:'プライバシーポリシー'},
+ko:{n:'한국어',h1:'Android를 위한 간단하고 유용한 앱과 게임.',lead:'시간과 공간을 아껴 주는 작은 도구, 몇 분이면 즐길 수 있는 게임. 11개 언어 지원.',apps:'앱 목록',contact:'문의',c:'질문, 의견 또는 지원 요청',soon:'출시 예정',priv:'개인정보처리방침'},
+nl:{n:'Nederlands',h1:'Eenvoudige, handige apps en games voor Android.',lead:'Kleine tools die je tijd en ruimte besparen, en games voor een paar minuten. Beschikbaar in 11 talen.',apps:'Onze apps',contact:'Contact',c:'Vragen, feedback of ondersteuning',soon:'Binnenkort',priv:'Privacybeleid'},
+pt:{n:'Português',h1:'Apps e jogos simples e úteis para Android.',lead:'Pequenas ferramentas que economizam seu tempo e espaço, e jogos para poucos minutos. Disponíveis em 11 idiomas.',apps:'Nossos apps',contact:'Contato',c:'Dúvidas, sugestões ou suporte',soon:'Em breve',priv:'Política de privacidade'},
+ar:{n:'العربية',h1:'تطبيقات وألعاب بسيطة ومفيدة لنظام Android.',lead:'أدوات صغيرة توفّر وقتك ومساحة هاتفك، وألعاب تلعبها في دقائق. متوفرة بـ 11 لغة.',apps:'تطبيقاتنا',contact:'تواصل معنا',c:'الأسئلة والملاحظات وطلبات الدعم',soon:'قريبًا',priv:'سياسة الخصوصية'}
 };
-const order=['en','de','tr','es','fr','it','ja','ko','nl','pt'];
+const order=['en','de','tr','es','fr','it','ja','ko','nl','pt','ar'];
 let data=null;
 function pick(){
   const q=new URLSearchParams(location.search).get('lang'); if(q&&T[q]) return q;
@@ -73,7 +74,7 @@ function pick(){
   const n=(navigator.language||'en').slice(0,2); return T[n]?n:'en';
 }
 function render(k){
-  const x=T[k]; document.documentElement.lang=k;
+  const x=T[k]; document.documentElement.lang=k; document.documentElement.dir=k==='ar'?'rtl':'ltr';
   h1.textContent=x.h1; lead.textContent=x.lead; hApps.textContent=x.apps; hContact.textContent=x.contact; cText.textContent=x.c;
   if(!data) return;
   apps.innerHTML=data.apps.map(a=>`<div class="app">
