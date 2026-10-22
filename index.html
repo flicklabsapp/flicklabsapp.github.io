@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flick Labs</title>
+<meta name="description" content="Flick Labs makes simple, useful apps and games for Android.">
+<link rel="icon" href="icons/spaciora.png">
+<style>
+:root{--bg:#F5F6FA;--card:#fff;--ink:#121826;--muted:#5D6779;--line:#DEE3EC;--accent:#245DEC;--accent2:#E5573F}
+@media (prefers-color-scheme:dark){:root{--bg:#0D1219;--card:#151D28;--ink:#E8EDF4;--muted:#95A2B4;--line:#243140;--accent:#7B9BFF;--accent2:#FF7A63}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:880px;margin:0 auto;padding:40px max(18px,env(safe-area-inset-left)) 28px}
+.logo{font-weight:900;font-size:22px;letter-spacing:-.02em;display:flex;align-items:center;gap:10px}
+.logo i{width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:inline-block}
+h1{font-size:clamp(30px,6vw,46px);line-height:1.08;letter-spacing:-.03em;margin:34px 0 10px;text-wrap:balance}
+.lead{color:var(--muted);font-size:18px;max-width:560px;margin:0}
+h2{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:44px 0 14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+.app{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:18px;display:flex;flex-direction:column;gap:10px}
+.app img,.app .ph{width:64px;height:64px;border-radius:16px}
+.ph{display:grid;place-items:center;color:#fff;font-weight:900;font-size:26px}
+.app b{font-size:18px}
+.app p{margin:0;color:var(--muted);font-size:14.5px;flex:1}
+.links{display:flex;gap:12px;flex-wrap:wrap;font-size:14px}
+.links a{color:var(--accent);text-decoration:none;font-weight:600}
+.links a:hover{text-decoration:underline}
+.soon{font-size:12px;font-weight:700;color:var(--muted);border:1px solid var(--line);border-radius:8px;padding:2px 8px;align-self:flex-start}
+.contact{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px;display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;justify-content:space-between}
+.contact a{color:var(--accent);font-weight:700;text-decoration:none;overflow-wrap:anywhere}
+footer{color:var(--muted);font-size:13px;margin-top:34px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="logo"><i></i>Flick Labs</div>
+  <h1>Simple, useful apps and games for Android.</h1>
+  <p class="lead">Small tools that save you time and space, and games you can play in a few minutes. Available in 10 languages.</p>
+
+  <h2>Our apps</h2>
+  <div class="grid" id="apps"></div>
+
+  <h2>Contact</h2>
+  <div class="contact"><span>Questions, feedback or support requests</span><a href="mailto:flicklabsapp@gmail.com">flicklabsapp@gmail.com</a></div>
+
+  <footer>© 2026 Flick Labs</footer>
+</div>
+<script>
+fetch('apps.json').then(r=>r.json()).then(d=>{
+  document.getElementById('apps').innerHTML=d.apps.map(a=>`<div class="app">
+    ${a.icon?`<img src="${a.icon}" alt="">`:`<div class="ph" style="background:${a.color}">${a.name[0]}</div>`}
+    <b>${a.name}</b><p>${a.tagline.en}</p>
+    ${a.play?'':'<span class="soon">Coming soon</span>'}
+    <div class="links">${a.play?`<a href="${a.play}">Google Play</a>`:''}${a.privacy?`<a href="${a.privacy}">Privacy policy</a>`:''}</div></div>`).join('');
+}).catch(()=>{});
+</script>
+</body>
+</html>

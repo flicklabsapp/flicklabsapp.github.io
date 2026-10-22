@@ -1,0 +1,44 @@
+{
+  "updated": "2026-10-22",
+  "apps": [
+    {
+      "id": "spaciora",
+      "name": "Spaciora",
+      "package": "com.flicklabs.spaciora",
+      "icon": "icons/spaciora.png",
+      "color": "#245DEC",
+      "play": "",
+      "privacy": "spaciora/privacy/",
+      "tagline": {
+        "en": "Free up space: duplicate photos, big videos, screenshots and more.",
+        "tr": "Yer aç: aynı fotoğraflar, büyük videolar, ekran görüntüleri ve fazlası."
+      }
+    },
+    {
+      "id": "gembloom",
+      "name": "Gem Bloom",
+      "package": "com.flicklabs.gembloom",
+      "icon": "",
+      "color": "#7A3FD6",
+      "play": "",
+      "privacy": "",
+      "tagline": {
+        "en": "Match gems that bloom into crystal flowers.",
+        "tr": "Kristal çiçeklere dönüşen taşları eşleştir."
+      }
+    },
+    {
+      "id": "minare",
+      "name": "Minare",
+      "package": "",
+      "icon": "",
+      "color": "#0F7A63",
+      "play": "",
+      "privacy": "",
+      "tagline": {
+        "en": "Your daily religious companion.",
+        "tr": "Günlük dini rehberin."
+      }
+    }
+  ]
+}
