@@ -11,33 +11,57 @@
       "privacy": "spaciora/privacy/",
       "tagline": {
         "en": "Free up space: duplicate photos, big videos, screenshots and more.",
-        "tr": "Yer aç: aynı fotoğraflar, büyük videolar, ekran görüntüleri ve fazlası."
+        "tr": "Yer aç: aynı fotoğraflar, büyük videolar, ekran görüntüleri ve fazlası.",
+        "de": "Schaffe Platz: doppelte Fotos, große Videos, Screenshots und mehr.",
+        "es": "Libera espacio: fotos duplicadas, vídeos grandes, capturas y más.",
+        "fr": "Libérez de l'espace : photos en double, grandes vidéos, captures et plus.",
+        "it": "Libera spazio: foto duplicate, video pesanti, screenshot e altro.",
+        "ja": "空き容量を確保：重複写真、大きな動画、スクリーンショットなど。",
+        "ko": "공간 확보: 중복 사진, 큰 동영상, 스크린샷 등.",
+        "nl": "Maak ruimte vrij: dubbele foto's, grote video's, screenshots en meer.",
+        "pt": "Libere espaço: fotos duplicadas, vídeos grandes, capturas e mais."
       }
     },
     {
       "id": "gembloom",
       "name": "Gem Bloom",
       "package": "com.flicklabs.gembloom",
-      "icon": "",
+      "icon": "icons/gembloom.png",
       "color": "#7A3FD6",
       "play": "",
       "privacy": "",
       "tagline": {
         "en": "Match gems that bloom into crystal flowers.",
-        "tr": "Kristal çiçeklere dönüşen taşları eşleştir."
+        "tr": "Kristal çiçeklere dönüşen taşları eşleştir.",
+        "de": "Verbinde Edelsteine, die zu Kristallblumen erblühen.",
+        "es": "Combina gemas que florecen en flores de cristal.",
+        "fr": "Associez des gemmes qui éclosent en fleurs de cristal.",
+        "it": "Abbina gemme che sbocciano in fiori di cristallo.",
+        "ja": "宝石をそろえて、クリスタルの花を咲かせよう。",
+        "ko": "보석을 맞춰 크리스털 꽃을 피워 보세요.",
+        "nl": "Combineer edelstenen die opbloeien tot kristallen bloemen.",
+        "pt": "Combine gemas que desabrocham em flores de cristal."
       }
     },
     {
       "id": "minare",
       "name": "Minare",
       "package": "",
-      "icon": "",
+      "icon": "icons/minare.png",
       "color": "#0F7A63",
       "play": "",
       "privacy": "",
       "tagline": {
         "en": "Your daily religious companion.",
-        "tr": "Günlük dini rehberin."
+        "tr": "Günlük dini rehberin.",
+        "de": "Dein täglicher religiöser Begleiter.",
+        "es": "Tu guía religiosa diaria.",
+        "fr": "Votre guide religieux au quotidien.",
+        "it": "La tua guida religiosa quotidiana.",
+        "ja": "毎日の信仰のおともに。",
+        "ko": "매일의 신앙 동반자.",
+        "nl": "Je dagelijkse religieuze metgezel.",
+        "pt": "Seu guia religioso diário."
       }
     }
   ]
