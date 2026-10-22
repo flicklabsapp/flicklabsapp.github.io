@@ -29,7 +29,7 @@
       "icon": "icons/gembloom.png",
       "color": "#7A3FD6",
       "play": "",
-      "privacy": "",
+      "privacy": "gembloom/privacy/",
       "tagline": {
         "en": "Match gems that bloom into crystal flowers.",
         "tr": "Kristal çiçeklere dönüşen taşları eşleştir.",
@@ -46,11 +46,11 @@
     {
       "id": "minare",
       "name": "Minare",
-      "package": "",
+      "package": "com.flicklabs.minare",
       "icon": "icons/minare.png",
       "color": "#0F7A63",
       "play": "",
-      "privacy": "",
+      "privacy": "minare/privacy/",
       "tagline": {
         "en": "Your daily religious companion.",
         "tr": "Günlük dini rehberin.",
