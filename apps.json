@@ -2,6 +2,28 @@
   "updated": "2026-10-22",
   "apps": [
     {
+      "id": "okayeat",
+      "name": "OkayEat",
+      "package": "com.flicklabs.okayeat",
+      "icon": "icons/okayeat.png",
+      "color": "#14213D",
+      "play": "",
+      "privacy": "okayeat/privacy/",
+      "tagline": {
+        "en": "Scan food barcodes and spot ingredients you want to avoid.",
+        "tr": "Gıda barkodunu tara, kaçındığın içerikleri anında gör.",
+        "de": "Scanne Lebensmittel-Barcodes und erkenne Zutaten, die du meiden willst.",
+        "es": "Escanea códigos de barras y detecta los ingredientes que quieres evitar.",
+        "fr": "Scannez les codes-barres et repérez les ingrédients à éviter.",
+        "it": "Scansiona i codici a barre e scopri gli ingredienti da evitare.",
+        "ja": "バーコードを読み取って、避けたい原材料をすぐにチェック。",
+        "ko": "바코드를 스캔하고 피하고 싶은 성분을 바로 확인하세요.",
+        "nl": "Scan barcodes en zie meteen welke ingrediënten je wilt vermijden.",
+        "pt": "Escaneie códigos de barras e veja os ingredientes que você quer evitar.",
+        "ar": "امسح الرموز الشريطية للأطعمة واكتشف المكوّنات التي تريد تجنّبها."
+      }
+    },
+    {
       "id": "spaciora",
       "name": "Spaciora",
       "package": "com.flicklabs.spaciora",
