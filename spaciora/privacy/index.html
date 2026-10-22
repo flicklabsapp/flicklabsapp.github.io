@@ -143,15 +143,25 @@ pt:{n:'Português',t:'Spaciora – Política de Privacidade',d:'Data de vigênci
 ['Crianças','O Spaciora não é direcionado a crianças menores de 13 anos e não coletamos intencionalmente informações de crianças.'],
 ['Excluir seus dados','Como não coletamos seus dados, nada fica armazenado do nosso lado. Desinstalar o app remove todas as configurações do seu aparelho.'],
 ['Alterações','Podemos atualizar esta política. A versão mais recente está sempre nesta página.'],
-['Contato','Dúvidas ou solicitações: '+MAIL]]}
+['Contato','Dúvidas ou solicitações: '+MAIL]]},
+ar:{n:'العربية',t:'Spaciora – سياسة الخصوصية',d:'تاريخ السريان: 22 أكتوبر 2026',s:[
+['من نحن','تطبيق Spaciora: منظّف الهاتف («Spaciora»، «التطبيق») من تطوير Flick Labs. توضح هذه السياسة المعلومات التي يستخدمها التطبيق وكيف يستخدمها. للتواصل: '+MAIL],
+['صورك ومقاطع الفيديو تبقى على جهازك','للعثور على الصور المكرّرة والمتشابهة ومقاطع الفيديو الكبيرة ولقطات الشاشة وغيرها من الملفات غير الضرورية، يقرأ Spaciora الصور ومقاطع الفيديو في معرضك. يتم التحليل بالكامل على جهازك. نحن لا نرفع صورك أو مقاطع الفيديو أو محتواها ولا ننسخها ولا نخزّنها ولا نشاركها أبدًا. لا تُحذف الملفات إلا بعد أن تختارها وتؤكّد ذلك في نافذة نظام Android.'],
+['المعلومات التي نجمعها','نحن لا نجمع معلومات شخصية. لا يحتوي التطبيق على حسابات أو تسجيل دخول. تُحفظ إعداداتك (اللغة، والتذكير، وإجمالي المساحة المحرّرة) على جهازك فقط.'],
+['الأذونات','<ul><li><b>الصور ومقاطع الفيديو:</b> لفحص معرضك وحذف العناصر التي تختارها.</li><li><b>الإشعارات (اختيارية):</b> لإرسال تذكير أسبوعي بالتنظيف إذا فعّلته.</li><li><b>الإنترنت:</b> لتحميل الإعلانات فقط.</li></ul>'],
+['الإعلانات','يعرض التطبيق إعلانات تقدّمها Google AdMob. لعرض الإعلانات وقياسها، قد تجمع Google معلومات مثل معرّف الإعلانات لجهازك وعنوان IP ونوع الجهاز والموقع التقريبي وتستخدمها. في المنطقة الاقتصادية الأوروبية والمملكة المتحدة وسويسرا، يطلب التطبيق موافقتك قبل عرض إعلانات مخصّصة، ويمكنك تغيير اختيارك في أي وقت من الإعدادات ← خيارات خصوصية الإعلانات. يمكنك أيضًا إعادة تعيين معرّف الإعلانات أو حذفه من إعدادات Android. تعرّف على كيفية استخدام '+ADMOB+' للبيانات.'],
+['الأطفال','Spaciora ليس موجّهًا للأطفال دون 13 عامًا، ولا نجمع عن علم معلومات من الأطفال.'],
+['حذف بياناتك','بما أننا لا نجمع بياناتك، فلا يُخزَّن شيء لدينا. يؤدي إلغاء تثبيت التطبيق إلى إزالة جميع إعداداته من جهازك.'],
+['التغييرات','قد نحدّث هذه السياسة. تتوفر أحدث نسخة دائمًا في هذه الصفحة.'],
+['التواصل','للأسئلة أو الطلبات: '+MAIL]]}
 };
-const order=['en','de','tr','es','fr','it','ja','ko','nl','pt'];
+const order=['en','de','tr','es','fr','it','ja','ko','nl','pt','ar'];
 function pick(){
   const q=new URLSearchParams(location.search).get('lang'); if(q&&L[q]) return q;
   const n=(navigator.language||'en').slice(0,2); return L[n]?n:'en';
 }
 function show(k){
-  const x=L[k]; document.documentElement.lang=k; document.title=x.t;
+  const x=L[k]; document.documentElement.lang=k; document.documentElement.dir=k==='ar'?'rtl':'ltr'; document.title=x.t;
   document.getElementById('t').textContent=x.t; document.getElementById('d').textContent=x.d;
   document.getElementById('body').innerHTML=x.s.map(([h,p])=>'<h2>'+h+'</h2>'+(p.startsWith('<ul>')?p:'<p>'+p+'</p>')).join('');
   document.querySelectorAll('#langs button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.k===k));
