@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-22",
+  "updated": "2026-11-10",
   "apps": [
     {
       "id": "okayeat",
@@ -69,8 +69,8 @@
     },
     {
       "id": "minare",
-      "name": "Minare",
-      "package": "com.flicklabs.minare",
+      "name": "Minare Yolu",
+      "package": "com.flicklabs.minareyolu",
       "icon": "icons/minare.png",
       "color": "#0F7A63",
       "play": "",
